@@ -1,64 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arasada Pavan Teja | Novels</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-    <h1>Arasada Pavan Teja</h1>
-    <p>Stories that stay with you</p>
-</header>
-
-<section class="about">
-    <h2>About Me</h2>
-    <p>
-        I am a novelist creating emotional and cinematic stories.
-        Explore my books and watch their trailers below.
-    </p>
-</section>
-
-<section class="novels">
-
+<section class="gallery">
     <h2>My Novels</h2>
 
-    <!-- Novel 1 -->
-    <div class="card">
-        <img src="cover1.jpg" alt="Novel Cover">
-        <div class="info">
-            <h3>Novel Title One</h3>
-            <p>A short description of your novel goes here.</p>
+    <div class="row">
 
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-            allowfullscreen></iframe>
-
-            <a href="#" class="btn">Read / Buy</a>
+        <!-- Novel 1 -->
+        <div class="novel" onclick="openTrailer('ABC123XYZ')">
+            <img src="cover1.jpg">
+            <div class="overlay">
+                <h3>Novel One</h3>
+            </div>
         </div>
-    </div>
 
-    <!-- Novel 2 -->
-    <div class="card">
-        <img src="cover2.jpg" alt="Novel Cover">
-        <div class="info">
-            <h3>Novel Title Two</h3>
-            <p>Description of the second novel.</p>
-
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-            allowfullscreen></iframe>
-
-            <a href="#" class="btn">Read / Buy</a>
+        <!-- Novel 2 -->
+        <div class="novel" onclick="openTrailer('DEF456XYZ')">
+            <img src="cover2.jpg">
+            <div class="overlay">
+                <h3>Novel Two</h3>
+            </div>
         </div>
-    </div>
 
+        <!-- Add more novels the same way -->
+
+    </div>
 </section>
 
-<footer>
-    <p>© 2026 Arasada Pavan Teja</p>
-</footer>
+<!-- Trailer Popup -->
+<div id="trailerModal" class="modal">
+    <span class="close" onclick="closeTrailer()">×</span>
+    <iframe id="trailerFrame" allowfullscreen></iframe>
+</div>
 
-</body>
-</html>
+<script src="script.js"></script>
