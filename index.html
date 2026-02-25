@@ -3,117 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pavan Teja | Novels</title>
-
+<title>Pavan Teja | Author</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Pavan Teja — Novels</h1>
-    <p>Cinematic Stories • Emotional Worlds • Dark Truths</p>
-</header>
+<!-- HERO -->
+<section class="hero">
+<h1>Pavan Teja</h1>
+<p>Author of Romantic, Psychological & Sci-Fi Stories</p>
+</section>
 
-<section class="gallery">
+<!-- BOOKS -->
+<section class="books">
+
 <h2>My Novels</h2>
 
-<div class="row">
+<div class="book-grid">
 
-<!-- SUNGEETHA -->
-<div class="novel" onclick="openTrailer('H0h-R1HfQx8')">
-<img src="placeholder.jpg">
-<div class="overlay">
+<!-- BOOK -->
+<div class="book">
+<div class="cover"></div>
 <h3>Sungeetha</h3>
 <p>Romantic Tragic Drama</p>
 
-<div class="buttons">
+<button onclick="openTrailer('H0h-R1HfQx8')">▶ Watch Trailer</button>
+
+<div class="buy">
 <a href="https://store.pothi.com/book/arasada-pavan-teja-sungeetha/" target="_blank">B&W</a>
 <a href="https://store.pothi.com/book/arasada-pavan-teja-sungeetha-0/" target="_blank">Colour</a>
 </div>
 </div>
-</div>
 
-<!-- ANONYMOUS -->
-<div class="novel" onclick="openTrailer('fJq81CpxlOY')">
-<img src="placeholder.jpg">
-<div class="overlay">
+<div class="book">
+<div class="cover"></div>
 <h3>Anonymous</h3>
 <p>Psychological Thriller</p>
-
-<div class="buttons">
+<button onclick="openTrailer('fJq81CpxlOY')">▶ Watch Trailer</button>
+<div class="buy">
 <a href="https://store.pothi.com/book/arasada-pavan-teja-anonymous-0/" target="_blank">B&W</a>
 <a href="https://store.pothi.com/book/arasada-pavan-teja-anonymous/" target="_blank">Colour</a>
 </div>
 </div>
-</div>
 
-<!-- NAINA -->
-<div class="novel" onclick="openTrailer('26lIL6vax30')">
-<img src="placeholder.jpg">
-<div class="overlay">
+<div class="book">
+<div class="cover"></div>
 <h3>Naina</h3>
 <p>Romantic Family Drama</p>
-
-<div class="buttons">
+<button onclick="openTrailer('26lIL6vax30')">▶ Watch Trailer</button>
+<div class="buy">
 <a href="https://store.pothi.com/book/arasada-pavan-teja-vyshu-1/" target="_blank">B&W</a>
 <a href="https://store.pothi.com/book/arasada-pavan-teja-naina/" target="_blank">Colour</a>
 </div>
 </div>
-</div>
 
-<!-- MIRAZ -->
-<div class="novel" onclick="openTrailer('meM7mPIHqyk')">
-<img src="placeholder.jpg">
-<div class="overlay">
+<div class="book">
+<div class="cover"></div>
 <h3>Miraz</h3>
 <p>Sci-Fi Horror & Techno Thriller</p>
-
-<div class="buttons">
+<button onclick="openTrailer('meM7mPIHqyk')">▶ Watch Trailer</button>
+<div class="buy">
 <a href="https://store.pothi.com/book/arasada-pavan-teja-miraz/" target="_blank">B&W</a>
 <a href="https://store.pothi.com/book/arasada-pavan-teja-miraz-2/" target="_blank">Colour</a>
 </div>
 </div>
-</div>
 
-<!-- VYSHU -->
-<div class="novel" onclick="openTrailer('iuvg65sb7ng')">
-<img src="placeholder.jpg">
-<div class="overlay">
+<div class="book">
+<div class="cover"></div>
 <h3>Vyshu</h3>
 <p>Romantic Drama</p>
-
-<div class="buttons">
+<button onclick="openTrailer('iuvg65sb7ng')">▶ Watch Trailer</button>
+<div class="buy">
 <a href="https://store.pothi.com/book/arasada-pavan-teja-vyshu-2/" target="_blank">B&W</a>
 <a href="https://store.pothi.com/book/arasada-pavan-teja-vyshu/" target="_blank">Colour</a>
 </div>
 </div>
-</div>
 
-<!-- INDEX -->
-<div class="novel" onclick="openTrailer('YK60Rn6HORg')">
-<img src="placeholder.jpg">
-<div class="overlay">
+<div class="book">
+<div class="cover"></div>
 <h3>Index</h3>
 <p>Contemporary Romance</p>
-
-<div class="buttons">
+<button onclick="openTrailer('YK60Rn6HORg')">▶ Watch Trailer</button>
+<div class="buy">
 <a href="https://store.pothi.com/book/arasada-pavan-teja-index/" target="_blank">B&W</a>
 <a href="https://store.pothi.com/book/arasada-pavan-teja-miraz-2/" target="_blank">Colour</a>
-</div>
 </div>
 </div>
 
 </div>
 </section>
 
-<!-- Trailer Modal -->
-<div id="trailerModal" class="modal">
-<span class="close" onclick="closeTrailer()">×</span>
-<iframe id="trailerFrame" allowfullscreen></iframe>
+<!-- TRAILER MODAL -->
+<div id="modal" class="modal">
+<span onclick="closeTrailer()" class="close">×</span>
+<iframe id="frame" allowfullscreen></iframe>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
